@@ -32,3 +32,7 @@ if __name__ == '__main__':
 
     cleaned_df = clean(args.input1, args.input2)
     cleaned_df.to_csv(args.output, index=False)
+    
+    # Modified to output the shapd oc cleaned data
+    print("The cleaned file shapse is (Rows, Columns):")
+    print(cleaned_df.shape)
